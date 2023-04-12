@@ -1,0 +1,161 @@
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  text-align: center;
+}
+
+.header, main, footer {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 15px;
+}
+
+.nav {
+  background-color: #4fc912;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.nav a {
+  color: #3d109f;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.nav a:hover {
+  background-color: #3d109f;
+}
+
+.index-banner {
+  background-image: url(images/banner.jpg);
+  background-size: cover;
+  color: #ffffff;
+  height: 400px;
+  text-align: center;
+}
+
+.index-banner h1 {
+  font-size: 48px;
+  margin-top: 120px;
+  text-shadow: 2px 2px #22c33281;
+}
+
+.main-graphic {
+  width: 40px;
+  height: 40px;
+}
+          
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+          
+.main-graphic:hover 
+.hover-image {              
+display: block;
+}
+
+.rental-item {
+  border: 1px solid #f6f6f6;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rental-item h2 {
+  margin-top: 0;
+}
+
+.rental-item img {
+  float: left;
+  margin-right: 20px;
+}
+
+.main-graphic {
+  width: 40px;
+  height: 40px;
+}
+          
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+          
+.main-graphic:hover 
+.hover-image {              
+display: block;
+}
+
+.sales-item {
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.sales-item h2 {
+  margin-top: 0;
+}
+
+.sales-item img {
+  float: left;
+  margin-right: 20px;
+}
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.main-graphic {
+  position: relative;
+}
+          
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+          
+.main-graphic {
+  width: 40px;
+  height: 40px;
+}
+
+.service-item {
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.service-item h2 {
+  margin-top: 0;
+}
+
+.service-item img {
+  float: left;
+  margin-right: 20px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!-- sales page -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>First Familiy Sales</title> 
+        <meta name="description" content="A bike for the freedom loving family"> <meta name="keywords" content="first family, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
+        <link rel="stylesheet" href="test style.css">
+    </head>
+    <!--I attempted to change the background color from light blue to an image it resulted in a better color but not the image-->
+    <body bgcolor="#af804f">
+        <header>
+            <div class="main-graphic">
+                <a href="#">
+                  <img src="images\american flag.jpg" alt="flag" class="constant-image">
+                  <div class="hover-image">
+                    <img src="images\bikes.jpg" alt="Hover Image" class="hover-image">
+                  </div>
+                </a>
+              </div>
+        </header> 
+         <!-- expermineting with font sizes -->
+            <h1>First Family sales</h1>
+            <h2>A bike for the freedom loving family.</h2>
+            <h5>bikes at guaranteed lowest prices</h5>
+            <h5>we price match all inventory. see store for details.</h5>
+            <video src="video\mixkit-person-cycling-down-a-rocky-slope-40893-small.mp4" autoplay controls></video>
+            <ol>
+                <li>GT:</li>
+                <p>Adult - $600</p>
+                <p>child - $189.98</p>
+                <p>-------------</p>
+                <li>TREK:</li>
+                <p>Adult - $2,070</p>
+                <p>child - $350</p>
+                <p>-------------</p>
+                <li>HUFFY:</li>
+                <p>Adult - $244.98</p>
+                <p>child - $99</p>
+                <p>-------------</p>
+                <li>Gary Fisher:</li>
+                <p>Adult - $425</p>
+                <p>child - $225</p>
+                <p>-------------</p>
+                <li>Schwinn:</li>
+                <p>Adult - $1,000</p>
+                <p>child - $200</p>
+                <p>-------------</p>
+                <label for="menu">choose your dream bicycle:</label>
+	<select id="menu" name="menu">
+		<option value="GT"> GT</option>
+		<option value="Trek">TREK</option>
+		<option value="Gary Fisher">Gary Fisher</option>
+		<option value="HUFFY">HUFFY</option>
+		<option value="Schwinn">Schwinn</option>
+	</select>
+  <label for="menu">choose your dream bicycle:</label>
+	<select id="menu" name="menu">
+		<option value="Adult">Adult</option>
+		<option value="Child">Child</option>
+	</select>
+            </ol>
+            <p>used bikes available on request</p>
+            <p>If you don't see the model you want <em> we can order something you like.</em></p>
+            </ol>
+          </pre> 
+          <form>
+            <input type="checkbox" name="option1" value="14.99">air pumps - $14.99<br>
+            <input type="checkbox" name="option2" value="18.99">bike locks - $18.99<br>
+            <input type="checkbox" name="option3" value="19.99">bike chains - $19.99<br>
+          </form>
+          <br>
+          <button onclick="calculateTotal()">proceed to checkout:</button>
+          <p id="total"></p>
+  
+<script>
+  function calculateTotal() {
+    let checkboxes = document.getElementsByTagName('input');
+    let total = 0;
+
+    for (let i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].type == 'checkbox' && checkboxes[i].checked) {
+        total += parseInt(checkboxes[i].value);
+      }
+    }
+
+    document.getElementById('total').innerHTML = 'Total: $' + total;
+  }
+</script>
+            </ol>
+            <h5>come for the bike travel with freedom</h5>
+            <h3>where will you go next?<h3>
+
+            <font color="#ffffff" h6>***********************************************************************************************************************</h6></font>
+            <h4>20% discounts available formost models for active duty members of the armed services, police, and EMS</h4>
+            <font color="#ffffff" h6>*******************************************************************************************************************************************</h6></font>
+    
+            <p>Let us help YOU find your dream bike!</p>
+
+            <blockquote>Specializing in: finding you the bike of your (American) dream
+            </blockquote>
+            <!-- (borrowed) list of bikes (change before final is turned in) -->
+            <p>If you don't see the model you want <em> we can order something you like.</em></p> 
+            <p>How to contact first family Bicycles Staff:</p> <address>1-800-872-2453 1-800-USA-BIKE<br>
+            <a href="emailto:owner@mpc.com">staff@mfirst_family_bicycles.com</a> </address> 
+
+            <pre>
+<!-- my address -->
+Store Address:
+
+First Family Bicycles
+1601 penn. ave
+washington D.C.
+20500
+
+            <nav>
+                <ul>
+                  <li><a href="index.htm">Home</a></li>
+                  <li><a href="sales.htm">Sales</a></li>
+                  <li><a href="rentals.htm">Rentals</a></li>
+                  <li><a href="services.htm">Services</a></li>
+                  <li><a href="contact.htm">Contact Us</a></li>
+                </ul>
+              </nav>
+              
+    </body>
+
+</html>
+<!-- last tested 02/22 -->

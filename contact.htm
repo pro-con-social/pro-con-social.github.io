@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<!-- contact page -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>First Familiy Bcontact page</title> 
+        <meta name="description" content="A bike for the freedom loving family"> <meta name="keywords" content="first family, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
+        <link rel="stylesheet" href="test style.css">
+    </head>
+    <!--I attempted to change the background color from light blue to an image it resulted in a better color but not the image-->
+    <body bgcolor="#af804f">
+      <div class="banner top-banner">
+      </div>
+      <div class="banner bottom-banner">
+      </div>
+        <header>
+            <div class="main-graphic">
+                <a href="#">
+                  <img src="images\american flag.jpg" alt="Main Image"
+                  width="650px" 
+                  height="400px"/>
+                 
+                  <img src="images\bikes.jpg" alt="Hover Image" class="hover-image" onmouseover=this .src='images\bikes.jpg' onmouseout=this .src='images\american flag.jpg'
+                    width="650px"
+                    height="400px"/>
+                  </div>
+                </a>
+              </div>
+              <h1>contact us</h1>
+<form name="myform" action="survey.php" method="post">
+	
+<h2>Contact information</h2>
+<form action="#" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="fullname">Full Name:</label>
+  <input type="text" id="fullname" name="fullname" required><br><br>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" required><br><br>
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city" required><br><br>
+
+  <label for="state">State:</label>
+  <select id="state" name="state" required>
+    <option value="">--Select State--</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="DC">District of Columbia</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+</select>
+  </select><br><br>
+
+  <label for="zip">ZIP:</label>
+  <input type="text" id="zip" name="zip" required><br><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="creationdate">Creation Date:</label>
+  <input type="date" id="creationdate" name="creationdate" required><br><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" minlength="50" maxlength="200" required></textarea><br>
+
+  <label>Type of Inquiry:</label><br>
+  <input type="radio" id="inquiry-type-1" name="inquiry-type" value="General" required>
+  <label for="inquiry-type-1">General Inquiry</label><br>
+  <input type="radio" id="inquiry-type-2" name="inquiry-type" value="Technical">
+  <label for="inquiry-type-2">Technical Inquiry</label><br>
+  <input type="radio" id="inquiry-type-3" name="inquiry-type" value="sales">
+  <label for="inquiry-type-3">Sales Inquiry</label><br>
+  <input type="radio" id="inquiry-type-4" name="inquiry-type" value="Repairs">
+  <label for="inquiry-type-4">Repairs Inquiry</label><br>
+
+  <label for="item-type">Type of Item:</label>
+  <select id="item-type" name="item-type" required>
+    <option value="">--Select Item Type--</option>
+    <option value="Bike">E-Scooter (coming soon)</option>
+    <option value="Bike">Bike</option>
+  </select><br><br>
+
+  <button type="submit" onclick="changeText()">submit</button>
+
+  <script>
+    function changeText() {
+      document.getElementsByTagName("button")[0].innerHTML = "Thank you!";
+      window.location.href = "index.htm";
+    }
+  </script>
+  <button type="reset">Reset</button>
+</form>
+        </header> 
+            <p>For more information call:</p> <address>1-800-872-2453 1-800-USA-BIKE<br>
+            <a href="emailto:owner@mpc.com">staff@mfirst_family_bicycles.com</a> </address> 
+
+            <pre>
+<!-- my address -->
+Store Address:
+
+First Family Bicycles
+1601 penn. ave
+washington D.C.
+20500
+            </pre> 
+
+            <nav>
+                <ul>
+                  <li><a href="index.htm">Home</a></li>
+                  <li><a href="sales.htm">Sales</a></li>
+                  <li><a href="rentals.htm">Rentals</a></li>
+                  <li><a href="services.htm">Services</a></li>
+                  <li><a href="contact.htm">Contact Us</a></li>
+                </ul>
+              </nav>
+
+    </body>
+
+</html>
+<!-- last tested 04/9/23 -->
